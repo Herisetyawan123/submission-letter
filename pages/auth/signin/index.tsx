@@ -1,4 +1,4 @@
-import { FormEventHandler, SyntheticEvent, useRef } from "react"
+import { SyntheticEvent, useRef } from "react"
 import { Input } from "../../../src/components/input";
 
 export default function SignIn() {
@@ -9,7 +9,7 @@ export default function SignIn() {
     const target = e.target as typeof e.target & {
       nim: { value: string };
       password: { value: string };
-    } 
+    }
     target.nim.value = ""
   }
 
